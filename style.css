@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: Roboto Slab, sans-serif;
+}
+
+.container{
+    box-sizing: content-box;
+    width: 83%;
+    height: 76%;
+    padding: 9% 8% 15%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.first{
+    width: 365px;
+    height: 93px;
+}
+
+.first>h1{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55.76px;
+}
+
+.second{
+    margin-top: 18px;
+    height: 374px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.text{
+    width: 662px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.photo-first{
+    width: 366px;
+}
+
+.photo1{
+    width: 314px;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse1{
+    position: absolute;
+    bottom: 6px;
+    z-index: 1;
+}
+
+.third{
+    margin-top: 94px;
+    height: 219px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-second{
+    width: 232px;
+    height: 219px;
+    position: relative;
+}
+
+.photo2{
+    width: 232px;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.ellipse2{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    z-index: 1;
+}
+
+.article{
+    width: calc(100%-232px);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 12%;
+    align-items: center;
+    margin-right: 16%;
+}
+
+.box>h3, .box>p{
+    width: 150px;
+    height: 39px;
+}
+
+.box>h3{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32.5px;
+    margin-bottom: 1px;
+}
+
+.box>p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+}
+
+@media (max-width: 1400px) {
+    .first{
+        width: 31%;
+        height: 13.5%;
+    }
+    .first>h1{
+        font-size: 32px;
+        line-height: 32.44px;
+    }
+    .second{
+        height: 54.5%;
+    }
+    .text{
+        width: 55.5%;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .photo-first{
+        width: 26%;
+    }
+    .photo1{
+        width: 100%;
+    }
+    .ellipse1{
+        width: 30%;
+        bottom: -10px;
+        right: -1.5%;
+    }
+    .photo-second{
+        display: none;
+    }
+    .third{
+        margin-top: 70px;
+        height: 14%;
+    }
+    .box>h3, .box>p{
+        height: 5.6%;
+    }
+    .box>h3{
+        width: 100%;
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+    .box>p{
+        width: 70%;
+        font-size: 11px;
+        line-height: 14.3px;
+    }
+}
+
+@media (max-width: 830px) {
+    .first{
+        width: 55%;
+        height: 7%;
+    }
+    .first>h1{
+        font-size: 26px;
+        line-height: 26.36px;
+    }
+    .second{
+        flex-direction: column;
+    }
+    .text{
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .photo-first{
+        margin-top: 20px;
+        width: 55%;
+    }
+    .ellipse1{
+        width: 55%;
+        right: 22%;
+        bottom: -17px;
+    }
+    .third{
+        margin-top: 45px;
+        height: 36%;
+    }
+    .article{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .box{
+        display: block;
+        margin-top: 34px;
+    }
+    .box>h3{
+        width: 100%;
+        height: 3%;
+        font-size: 12px;
+        line-height: 15.6px;
+    }
+    .box>p{
+        width: 55%;
+        height: 3%;
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
