@@ -1,1 +1,1 @@
-# aboutcourse
+# about-course
